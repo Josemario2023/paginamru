@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color:#F8F9F9;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+.container{
+    width: 90%;
+    max-width: 100%;
+    margin: 10px auto;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(4, auto) ;
+    line-height: 1.5;
+}
+
+.contenedor, .encabezado,.video-1, .video-2, .pie{
+    background-color: #FFFFFF;
+    padding:20px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: justify;
+}
+.encabezado{
+    display:flex;
+    justify-content: space-between;
+    background-color: #174D4D;
+    grid-column-start: 1;
+    grid-column-end:-1;
+}
+.titulo a{
+
+    text-decoration: none;
+}
+.titulo h1{
+    color: white;
+}
+.menu a{
+    padding: 10px ;
+    color: #F8F9F9;
+    text-decoration: none;
+}
+.menu{
+    cursor:pointer;
+}
+.menu :hover{
+    background-color: rgb(247, 240, 240);
+    color: black;
+    border-radius: 5px;
+}
+.contenedor{
+    grid-column: span 2;
+}
+.pie{
+    display:flex;
+    justify-content: center;
+    background-color: #174D4D;
+    grid-column-start: 1;
+    grid-column-end:-1;
+}
+.pie p{
+    color: #F8F9F9;
+    padding: 10px;
+}
+.video-1{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+.img-1{
+    display: block;
+    text-align: center;
+}
+
+.contenido-imagen-1,.img-content,.contenido-formulas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-a{
+    background-color: #174D4D;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.form-principal{
+    margin-top: 20px;
+}
+.formulario{
+    color:#1f1f1f;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#ffffff;
+    border-radius: 10px;
+}
+
+.input-container{
+    margin-bottom: 10px;
+}
+.label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="number"]{
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+.respuesta{
+    background-color:rgb(249, 232, 103);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+button{
+    background-color: #007bff;
+    color:#FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+.pie{
+    background-color: #174D4D;
+    text-align: center;
+}

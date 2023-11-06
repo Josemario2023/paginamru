@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página clase Javascript y Node js</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="encabezado">
+        <header class="titulo"><a href="./MRUV.html"><h1>Movimiento Rectilineo Uniformemente Variado</h1></a>
+        </header>
+     <nav class="menu">        
+        <a href="./index.html">INICIO</a>     
+        <a href="./MRU.html">MRU</a>
+        <a href="./MRUV.html">MRUV</a>
+    </nav>
+    </div>    
+   
+   
+    <main class="contenedor">
+            <h3>¿Qué es el Movimiento Rectilíneo Uniformemente variado MRUV</h3>
+            <p>El movimiento rectilíneo uniformemente variado o MRUV es un movimiento que ocurre sobre una línea recta con aceleración constante. En el MRUV la aceleración es constante, nunca va a cambiar, siempre es la misma. Mucha atención, lo constante es la aceleración, no la velocidad.
+            </p>
+
+           
+        <div>
+            <h3>Aceleración </h3>
+        <p>La aceleración indica la variación de la velocidad por unidad de tiempo.
+            <br>
+         Por ejemplo, tenemos un auto que parte del reposo (v0 = 0 m/s) y avanza con una aceleración constante de 2 m/s2. Este valor de la aceleración, podemos expresarlo de la siguiente manera:
+        </p>
+        <br>
+        <div class="img-content">
+            <img class="mruv-1" src="./img/ejemplo-de-aceleración-mruv.jpg" alt="">
+        </div>
+        
+        <br>
+        <p>
+            ¿Qué significa eso? Significa que en cada segundo, la velocidad va a cambiar 2 m/s, tal como podemos ver en el siguiente gráfico:
+        </p>
+        <div class="contenido-imagen-1">
+            <img class="mruv-2" src="./img/movimiento-rectilíneo-uniformemente-variado-mruv.jpg"/>
+        </div>
+
+        <div class="contenido-formulas">
+            <img class="mruv-2" src="./img/formulas-mruv-movimiento-rectilíneo-uniformemente-variado3.jpg"/>
+        </div>
+        
+        
+    </main>    
+
+        <div class="video-1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YxY05ybVjHo?si=YQ2s-CQqUWfRGDmv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <div class="video-2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lHa7QhzsB5E?si=Zzj6rRjpxFv96As-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <div class="form-1">
+            <form action="" class="form-principal">
+                <fieldset class="formulario">
+                    <div class="input-container">
+                       <label for="titulo">1. Resolución cuando no se cuenta con la distancia (MRUV) debe de tomar en cuenta si aumenta o disminuye +- </label><br>
+                    </div>
+                    <div class="input-container">
+                        <img src="./img/formulasindistancia.png" alt=""><br>
+                     </div>
+                    <div class="input-container">
+                        <label>Ingrese la velocidad inicial:</label>
+                        <input type="number" id="velocidad-inicial-1" placeholder="Velocidad inicial">
+                    </div>
+                    <div class="input-container">
+                        <label>Ingrese la aceleración:</label>
+                        <input type="number" id="aceleracion-1" placeholder="Aceleración">
+                    </div>
+                    <div class="input-container">
+                        <label>Ingrese el tiempo:</label>
+                        <input type="number" id="tiempo-1" placeholder="Tiempo">
+                    </div>
+                    <div class="input-container">
+                        <label for="resp-1">Respuesta:</label>
+                        <div class="respuesta">
+                            <p><span id="respuesta-1"></span></p>
+                        </div>
+                    </div>
+                    <button id="formdistancia" type="button" onclick="frvelocidadfinal();" >Calcular</button>
+                    <button type="button"onclick="limpiar_1();">Limpiar</button>
+                </fieldset>  
+            </form>
+
+        </div>
+
+        <div class="form-2">
+            <form action="" class="form-principal">
+                <fieldset class="formulario">
+                    <div class="input-container">
+                       <label for="titulo">2. Resolución cuando no se cuenta con la aceleracion(MRUV)</label><br>
+                    </div>
+                    <div class="input-container">
+                        <img src="./img/formulasinaceleracion.png" alt=""><br>
+                     </div>
+                    <div class="input-container">
+                        <label>Ingrese la velocidad inicial:</label>
+                        <input type="number" id="velocidad-inicial-2" placeholder="Velocidad inicial">
+                    </div>
+                    <div class="input-container">
+                        <label>Ingrese la velocidad final:</label>
+                        <input type="number" id="velocidad-final-1" placeholder="Velocidad final">
+                    </div>
+                    <div class="input-container">
+                        <label>Ingrese el tiempo:</label>
+                        <input type="number" id="tiempo-2" placeholder="Tiempo">
+                    </div>
+                    <div class="input-container">
+                        <label for="resp-1">Respuesta:</label>
+                        <div class="respuesta">
+                            <p><span id="respuesta-2"></span></p>
+                        </div>
+                    </div>
+                    <button id="formdistancia" type="button" onclick="frdistanciasinaceleracion();" >Calcular</button>
+                    <button type="button"onclick="limpiar_2();">Limpiar</button>
+                </fieldset>  
+            </form>
+        </div>
+
+        <div class="form-3">
+            <form action="" class="form-principal">
+                <fieldset class="formulario">
+                    <div class="input-container">
+                       <label for="titulo">3. Resolución cuando no se cuenta con la velocidad final(MRUV)</label><br>
+                    </div>
+                    <div class="input-container">
+                        <img src="./img/formulasinvelocidadfinal.png" alt=""><br>
+                     </div>
+                    <div class="input-container">
+                        <label>Ingrese la velocidad inicial:</label>
+                        <input type="number" id="velocidad-inicial-3" placeholder="Velocidad inicial">
+                    </div>
+                    <div class="input-container">
+                        <label>Ingrese la aceleración:</label>
+                        <input type="number" id="aceleracion-2" placeholder="Aceleración">
+                    </div>
+                    <div class="input-container">
+                        <label>Ingrese el tiempo:</label>
+                        <input type="number" id="tiempo-3" placeholder="Tiempo">
+                    </div>
+                    <div class="input-container">
+                        <label for="resp-1">Respuesta:</label>
+                        <div class="respuesta">
+                            <p><span id="respuesta-3"></span></p>
+                        </div>
+                    </div>
+                    <button type="button" onclick="frsinvelocidadfinal();" >Calcular</button>
+                    <button type="button"onclick="limpiar_3();">Limpiar</button>
+                </fieldset>  
+            </form>
+        </div>
+
+        <div class="form-4">
+            <form action="" class="form-principal">
+                <fieldset class="formulario">
+                    <div class="input-container">
+                       <label for="titulo">4. Resolución cuando no se cuenta con el tiempo(MRUV)</label><br>
+                    </div>
+                    <div class="input-container">
+                        <img src="./img/formulasintiempo.png" alt=""><br>
+                     </div>
+                    <div class="input-container">
+                        <label>Ingrese la velocidad inicial:</label>
+                        <input type="number" id="velocidad-inicial-4" placeholder="Velocidad inicial">
+                    </div>
+                    <div class="input-container">
+                        <label>Ingrese la aceleración:</label>
+                        <input type="number" id="aceleracion-3" placeholder="Aceleración">
+                    </div>
+                    <div class="input-container">
+                        <label>Ingrese la distancia:</label>
+                        <input type="number" id="distancia-1" placeholder="Distancia">
+                    </div>
+                    <div class="input-container">
+                        <label for="resp-1">Respuesta:</label>
+                        <div class="respuesta">
+                            <p><span id="respuesta-4"></span></p>
+                        </div>
+                    </div>
+                    <button type="button" onclick="frsintiempo();" >Calcular</button>
+                    <button type="button"onclick="limpiar_4();">Limpiar</button>
+                </fieldset>  
+            </form>
+        </div>
+       
+        <div class="form-5">
+            <form action="" class="form-principal">
+                <fieldset class="formulario">
+                    <div class="input-container">
+                       <label for="titulo">5. Resolución cuando se quiere averiguar la aceleración(MRUV)</label><br>
+                    </div>
+                    
+                    <div class="input-container">
+                        <label>Ingrese la velocidad final:</label>
+                        <input type="number" id="velocidad-final-2" placeholder="Velocidad Final">
+                    </div>
+                    <div class="input-container">
+                        <label>Ingrese la velocidad inicial:</label>
+                        <input type="number" id="velocidad-inicial-5" placeholder="Velocidad Inicial">
+                    </div>
+                    <div class="input-container">
+                        <label>Ingrese el tiempo:</label>
+                        <input type="number" id="tiempo-4" placeholder="Tiempo">
+                    </div>
+                    <div class="input-container">
+                        <label for="resp-1">Respuesta:</label>
+                        <div class="respuesta">
+                            <p><span id="respuesta-5"></span></p>
+                        </div>
+                    </div>
+                    <button type="button" onclick="fraceleracion();" >Calcular</button>
+                    <button type="button"onclick="limpiar_5();">Limpiar</button>
+                </fieldset>  
+            </form>
+        </div>
+
+
+    <footer class="pie">
+        <p>Estudiante: José Mario Lucas Contreras</p>
+        <p>Derechos reservados 2023</p>
+    </footer>
+</div>
+<script  src="./jav/formulas2.js"></script>
+</body>
+</html>

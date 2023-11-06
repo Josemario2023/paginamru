@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página clase Javascript y Node js</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="encabezado">
+        <header class="titulo"><a href="./MRU.html"><h1>Movimiento Rectilineo Uniforme</h1></a>
+        </header>
+     <nav class="menu">   
+            <a href="./index.html">INICIO</a>     
+            <a href="./MRU.html">MRU</a>
+            <a href="./MRUV.html">MRUV</a>
+    </nav>
+    </div>    
+   
+   
+    <main class="contenedor">
+            <h3>Movimiento Rectilineo Uniforme</h3>
+            <br>
+            <p>El movimiento rectilíneo uniforme (m.r.u.), es aquel con velocidad constante y cuya trayectoria es una línea recta. Un ejemplo claro son las puertas correderas de un ascensor, generalmente se abren y cierran en línea recta y siempre a la misma velocidad.
+            </p>
+            <br>
+            <div class="img-1">
+                <img src="./img/movimiento-rectilineo-uniforme.jpg" alt="">
+                <img src="./img/OIP.jpg" alt="">
+            </div>
+            
+
+            <br>
+            <h3>Características</h3>
+            <br>
+            <p> Las principales características del movimiento rectilíneo uniforme (MRU) son las siguientes:
+
+                <ul>
+                    <ol>
+                        -El movimiento siempre transcurre a lo largo de una línea recta.
+                    </ol>
+                    <ol>
+                        -Un móvil con MRU recorre distancias o espacios iguales en tiempos iguales.
+                    </ol>
+                    <ol>
+                        -La velocidad permanece inalterable tanto en magnitud como en dirección y sentido.
+                    </ol>
+                    <ol>
+                        -El MRU carece de aceleración (no hay cambios en la velocidad).
+                    </ol>
+                    <ol>
+                        -Puesto que la velocidad v se mantiene constante en el tiempo t, la gráfica de su magnitud en función del tiempo es una línea recta. En el ejemplo de la figura 2, la recta es de color verde y el valor de la velocidad se lee sobre el eje vertical, aproximadamente +0.68 m/s.
+                    </ol>
+                 </ul>             
+            </p>
+
+         
+
+    </main>    
+
+        <div class="video-1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mIFIz-UfYPk?si=Xj4vraJIFTe1F7el" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dEhmoIBPLik?si=Bv0SB4n6MldXb3Rm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vd0bhxqSUB4?si=MyrKkOcl5-ToEwSv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <div class="form-a">
+            <form action="" class="form-principal">
+                <fieldset class="formulario">
+                    <div class="input-container">
+                       <label for="titulo">Formula para encontrar la distancia recorrida (MRU) </label><br>
+                    </div>
+                    <div class="input-container">
+                        <label for="velocidad-1">Ingrese su Velocidad:</label>
+                        <input type="number" id="velocidad-1" placeholder="Velocidad">
+                    </div>
+                    <div class="input-container">
+                        <label for="tiempo-1">Ingrese su Tiempo:</label>
+                        <input type="number" id="tiempo-1" placeholder="Tiempo">
+                    </div>
+                    <div class="input-container">
+                        <label for="resp-1">Respuesta:</label>
+                        <div class="respuesta">
+                            <p><span id="respuesta-1"></span></p>
+                        </div>
+                    </div>
+                    <button id="formdistancia" type="button" onclick="frdistancia();" >Calcular</button>
+                    <button type="button"onclick="limpiar();">Limpiar</button>
+                </fieldset>  
+                <br>
+                <fieldset class="formulario">
+                    <div class="input-container">
+                       <label for="titulo">Fórmula para encontrar la velocidad recorrida (MRU)</label><br>
+                    </div>
+                    <div class="input-container">
+                        <label for="dis-2">Ingrese su Distancia:</label>
+                        <input type="number" id="distancia-1" placeholder="Distancia">
+                    </div>
+                    <div class="input-container">
+                        <label for="tiemp-2">Ingrese el tiempo:</label>
+                        <input type="number" id="tiempo-2" placeholder="Tiempo">
+                    </div>
+                    <div class="input-container">
+                        <label for="resp-2">Respuesta:</label>
+                        <div class="respuesta">
+                            <p><span id="respuesta-2"></span></p>
+                        </div>
+                    </div>
+                    <button type="button" onclick="frvelocidad();">Calcular</button>
+                    <button type="button" onclick="borrador();">Limpiar</button>
+                </fieldset> 
+                <br>
+                <fieldset class="formulario">
+                    <div class="input-container">
+                       <label for="titulo">Formula para encontrar el tiempo recorrida (MRU)</label><br>
+                    </div>
+                    <div class="input-container">
+                        <label for="dis-2">Ingrese su Distancia:</label>
+                        <input type="number" id="distancia-2" placeholder="Distancia">
+                    </div>
+                    <div class="input-container">
+                        <label for="vel-2">Ingrese la Velocidad:</label>
+                        <input type="number" id="velocidad-2" placeholder="Velocidad">
+                    </div>
+                    <div class="input-container">
+                        <label for="resp-3">Respuesta:</label>
+                        <div class="respuesta">
+                            <p><span id="respuesta-3"></span></p>
+                        </div>
+                    </div>
+                    <button type="button"  onclick="frtiempo();">Calcular</button>
+                    <button type="button"onclick="ultimoborrar();">Limpiar</button>
+                </fieldset>  
+                <br>           
+            </form>
+        </div>
+        
+      
+       
+    <footer class="pie">
+        <p>Estudiante: José Mario Lucas Contreras</p>
+        <p>Derechos reservados 2023</p>
+    </footer>
+</div>
+<script  src="./jav/formulas.js"></script>
+</body>
+</html>
